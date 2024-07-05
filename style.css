@@ -1019,3 +1019,199 @@ body {
   .property-agenda:nth-child(4n) {
     background-color: #4cc9b2;
   }
+
+/*-----------------PORTFOLIO SECTION--------------------*/
+
+
+  /*----------PORTFOLIO----------------------*/
+  .bodi-port {
+    background-color: #2d212d;
+    color: #dddfcb;
+}
+.ul-port {
+    padding: 0;
+    margin: 10px 10px 30px;
+    position: relative;
+    width: 100%;
+  }
+  .ul-port .li-port {
+    list-style: none;
+    float: left;
+    margin-right: 15px;
+    padding: 10px;
+    border: 1px solid #77caba;
+    color: #dddfcb;
+    text-transform: uppercase;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .ul-port .li-port:hover {
+    background: #77caba;
+    color: #2d212d;
+  }
+  .container-port {
+    padding: 30px;
+    position: relative;
+    box-sizing: border-box;
+  }
+  .box {
+    position: relative;
+    width: 23%;
+    float: left;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 10px;
+    text-transform: uppercase;
+  }
+  .active {
+    background: #fff;
+    color: #262626;
+  }
+  .desinger {
+    background: #3498db;
+  }
+  .dveloper {
+    background: #e74c3c;
+  }
+  .desing {
+    background: #e67e22;
+  }
+  .psd {
+    background: #d35400;
+  }
+  .logop {
+    background: #f39c12;
+  }
+  .box {
+    width: 200px; /* Ajusta según tus necesidades */
+    height: 200px; /* Ajusta según tus necesidades */
+    float: left;
+    margin: 10px;
+    overflow: hidden;
+    border: 1px solid #77caba;
+  }
+  .box:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(233, 190, 102, 0.3);
+  }
+  .box .img-port {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  .box:hover .img-port{
+    transform: scale(1.1);
+    filter: brightness(1.2);
+  }
+  .overlay {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    background-color: rgba(45, 33, 45, 0.8);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .box:hover .overlay {
+    bottom: 0;
+    height: 25%;
+  }
+  .overlay .h3-port {
+    color: #e9be66;
+    font-size: 20px;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+  }
+  .button-port {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 25px;
+    background-color: #548c9c;
+    color: #dddfcb;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button-port:hover {
+    background-color: #3cbfb6;
+    color: #2d212d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(219, 56, 56, 0.2);
+    
+  }
+  
+  /* Colores específicos para cada botón cuando está activo */
+  .button-port[data-filter="all"].active {
+    background-color: #e9be66;
+}
+  
+.button-port[data-filter="desinger"].active {
+  background-color: #d8862d;
+}
+  
+.button-port[data-filter="dveloper"].active {
+  background-color: #dd96a9;
+}
+  
+.button-port[data-filter="desing"].active {
+  background-color: #77caba;
+}
+  
+.button-port[data-filter="psd"].active {
+  background-color: #c5667e;
+}
+  
+.button-port[data-filter="logop"].active {
+  background-color: #b83c63;
+}
+  
+  /* Efecto hover para botones activos */
+  .button-port.active:hover {
+    opacity: 0.8;
+  }
+  .portfolio-title {
+    font-family: 'Montserrat', sans-serif; /* Asegúrate de importar esta fuente o usa una similar */
+    font-size: 40px;
+    font-weight: 700;
+    color: #e9be66;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  .portfolio-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, #b83c63 0%, #3cbfb6 100%);
+  }
+  .desinger { background: #d8862d; }
+  .dveloper { background: #dd96a9; }
+  .desing { background: #77caba; }
+  .psd { background: #3cbfb6; }
+  .logop { background: #c5667e; }  
