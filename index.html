@@ -148,5 +148,123 @@
   </div>
   </div>
   <!------FIN SER SECTION --------->
+
+  <!------AGENDA SECTION --------->
+<div class="bodi-agenda">
+    <div class="container-agenda">
+        <header>
+            <h1 class="h1-agenda">Agenda</h1>
+            <div class="nav-buttons-agenda">
+                <button class="btn-agenda" id="prevBtn">ANTERIOR</button>
+                <button class="btn-agenda" id="nextBtn">SIGUIENTE</button>
+            </div>
+        </header>
+        <div class="properties-container-agenda">
+            <div class="properties-agenda">
+                <div class="property-agenda">
+                    <div class="event">Evento 1</div>
+                    <div class="fecha">
+                        <span>Dia</span>
+                        <span>Mes</span>
+                        <span>Año</span>
+                    </div>
+                    <div class="des">Descripción breve   del evento</div>
+                </div>
+                <div class="property-agenda">
+                    <div class="event">Evento 2</div>
+                    <div class="fecha">
+                        <span>Dia</span>
+                        <span>Mes</span>
+                        <span>Año</span>
+                    </div>
+                    <div class="des">Descripción breve   del evento</div>
+                </div>
+                <div class="property-agenda">
+                    <div class="event">Evento 3</div>
+                    <div class="fecha">
+                        <span>Dia</span>
+                        <span>Mes</span>
+                        <span>Año</span>
+                    </div>
+                    <div class="des">Descripción breve   del evento</div>
+                </div>
+                <div class="property-agenda">
+                    <div class="event">Evento 4</div>
+                    <div class="fecha">
+                        <span>Dia</span>
+                        <span>Mes</span>
+                        <span>Año</span>
+                    </div>
+                    <div class="des">Descripción breve   del evento</div>
+                </div>
+                <div class="property-agenda">
+                    <div class="event">Evento 5</div>
+                    <div class="fecha">
+                        <span>Dia</span>
+                        <span>Mes</span>
+                        <span>Año</span>
+                    </div>
+                    <div class="des">Descripción breve   del evento</div>
+                </div>
+                <div class="property-agenda">
+                    <div class="event">Evento 6</div>
+                    <div class="fecha">
+                        <span>Dia</span>
+                        <span>Mes</span>
+                        <span>Año</span>
+                    </div>
+                    <div class="des">Descripción breve   del evento</div>
+                </div>
+                <div class="property-agenda">
+                    <div class="event">Evento 7</div>
+                    <div class="fecha">
+                        <span>Dia</span>
+                        <span>Mes</span>
+                        <span>Año</span>
+                    </div>
+                    <div class="des">Descripción breve   del evento</div>
+                </div>
+                <div class="property-agenda">
+                    <div class="event">Evento 8</div>
+                    <div class="fecha">
+                        <span>Dia</span>
+                        <span>Mes</span>
+                        <span>Año</span>
+                    </div>
+                    <div class="des">Descripción breve   del evento</div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  
+  <script>
+    const propertiesEl = document.querySelector('.properties-agenda');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let currentIndex = 0;
+  
+    function updatePosition() {
+        const propertyWidth = propertiesEl.children[0].offsetWidth;
+        const gap = 20; // El espacio entre propiedades
+        propertiesEl.style.transform = `translateX(-${currentIndex * (propertyWidth + gap)}px)`;
+    }
+  
+    prevBtn.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updatePosition();
+        }
+    });
+  
+    nextBtn.addEventListener('click', () => {
+        if (currentIndex < propertiesEl.children.length - 3) { // Ajustado para mostrar 3 propiedades a la vez
+            currentIndex++;
+            updatePosition();
+        }
+    });
+  </script>
+  <!------FIN AGENDA SECTION --------->
 </body>
 </html>
