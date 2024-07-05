@@ -799,3 +799,126 @@ body {
     .icon-sm:has(.fa-x-twitter) {
       --color: linear-gradient(45deg,#484949, #202020, #070707);
     }
+
+/*SER SECTIION*/
+.bodi-ser {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #2d212d; /* Color de fondo oscuro */
+    color: #dddfcb; /* Color de texto claro */
+}
+.container-ser {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.h1-ser {
+  text-align: center;
+  color: #e9be66; /* Color dorado para el título principal */
+  font-size: 5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+.h1-ser .span-ser {
+  color: #3cbfb6; /* Color turquesa para el span */
+}
+.h1-ser::after {
+  content: '';
+  display: block;
+  width: 180px;
+  height: 3px;
+  background-color: #3cbfb6;
+  margin: 10px auto;
+}
+.grid-ser {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.card-ser {
+  background-color: #548c9c; /* Color de fondo para las tarjetas */
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+.card-ser:hover {
+  background-color: #77caba; /* Color de hover para las tarjetas */
+  color: #2d212d;
+  transform: translateY(-5px);
+}
+.icon-ser {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  background-color: #e9be66; /* Color dorado para los íconos */
+  transition: background-color 0.3s ease;
+}
+.card-ser:hover .icon-ser {
+    background-color: white;
+}
+.icon-ser img {
+    width: 1px;
+    height: 600px;
+}
+.h3-ser {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #dddfcb; /* Color claro para los títulos de las tarjetas */
+}
+.p-ser {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #dddfcb; /* Color claro para el texto de las tarjetas */
+}
+.fa {
+  color: #2d212d; /* Color oscuro para los íconos */
+  width: auto;
+  height: auto;
+  size: 150px;
+}
+.card-ser:hover .h3-ser,
+.card-ser:hover .p-ser,
+.card-ser:hover .fa {
+    color: #2d212d; /* Color oscuro para el texto en hover */
+}
+/* Variación de colores para las tarjetas 
+.card-ser:nth-child(2n) {
+    background-color: #dd96a9;
+}
+
+.card-ser:nth-child(3n) {
+    background-color: #c5667e;
+}*/
+
+@media (max-width: 768px) {
+  .h1-ser {
+      font-size: 2rem;
+  }
+  .grid-ser {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+    .h1-ser {
+        font-size: 1.8rem;
+    }
+    .grid-ser {
+        grid-template-columns: 1fr;
+    }
+    .card-ser {
+        padding: 15px;
+    }
+    .h3-ser {
+        font-size: 1.1rem;
+    }
+    .p-ser {
+        font-size: 0.8rem;
+    }
+}
