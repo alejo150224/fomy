@@ -494,3 +494,125 @@ body {
       }
   }
   
+/*--------------ABOUT 2--------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+  --color-1: #e9be66;
+  --color-2: #d8862d;
+  --color-3: #dd96a9;
+  --color-4: #77caba;
+  --color-5: #3cbfb6;
+  --color-6: #c5667e;
+  --color-7: #b83c63;
+  --color-8: #dddfcb;
+  --color-9: #548c9c;
+  --color-10: #2d212d;
+}
+.bodi-ab {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-10);
+  background-image: 
+      radial-gradient(circle at 10% 20%, var(--color-7) 0%, transparent 20%),
+      radial-gradient(circle at 90% 80%, var(--color-5) 0%, transparent 20%);
+  font-size: 16px;
+  padding: 40px 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  padding: 3rem;
+}
+
+.about1 {
+  flex: 1;
+  margin-right: 40px;
+}
+
+.h1-about {
+  color: var(--color-1);
+  font-size: 3rem;
+  font-weight: 700;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.p-about1 {
+  color: #ffffff;
+  font-size: 1.2em;
+  margin-bottom: 70px;
+}
+
+.p-about {
+  color: #c5667e;
+  font-weight: bold;
+}
+
+
+
+.cta {
+  color: white;
+  background: linear-gradient(#dd96a9, #b83c63);
+  padding: 20px 30px;
+  font-size: 1.1em;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.cta:hover {
+  text-decoration: none;
+  background: linear-gradient(#c5667e, #b83c63);
+}
+
+@media screen and (max-width: 996px) {
+  .hero {
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem;
+  }
+
+  .about1 {
+      margin-right: 0;
+      margin-bottom: 2rem;
+  }
+
+  .about-img {
+      max-width: 100%;
+      margin-bottom: 2rem;
+  }
+
+  .wrapper {
+      justify-content: center;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .h1-about {
+      font-size: 2rem;
+  }
+
+  .p-about1, .p-about {
+      font-size: 0.9rem;
+  }
+}
