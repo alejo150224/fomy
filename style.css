@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+@font-face {
+  font-family: Timoteo;
+  src: url(This\ Cafe.ttf);
+}
 html,
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Quicksand", sans-serif;
+    font-family: Timoteo;
     font-size: 62.5%;
     font-size: 10px;
-    background-color: #2d212d;
+    background: linear-gradient(135deg, var(--color-3), var(--color-6), var(--color-4), var(--color-5));
+  background-size: 400% 400%;
+  animation: gradientBackground 15s ease infinite;
  
 }
 /*-- Inspiration taken from abdo steif -->
@@ -78,35 +84,49 @@ body {
     color: #00E676;
 }
 /* Home section */
+/* Home section */
 :root {
-    --color-1: #e9be66;
-    --color-2: #d8862d;
-    --color-3: #dd96a9;
-    --color-4: #77caba;
-    --color-5: #3cbfb6;
-    --color-6: #c5667e;
-    --color-7: #b83c63;
-    --color-8: #dddfcb;
-    --color-9: #548c9c;
-    --color-10: #2d212d;
-  }
-  
-  .home {
-      width: 100%;
-      height: 100vh;
-      background-color: var(--color-10);
-      background-image: 
-          radial-gradient(circle at 10% 20%, var(--color-7) 0%, transparent 20%),
-          radial-gradient(circle at 90% 80%, var(--color-5) 0%, transparent 20%);
-      background-position: center;
-      background-size: cover;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Poppins', sans-serif;
-  } 
+  --color-1: #e9be66;
+  --color-2: #d8862d;
+  --color-3: #dd96a9;
+  --color-4: #77caba;
+  --color-5: #3cbfb6;
+  --color-6: #c5667e;
+  --color-7: #b83c63;
+  --color-8: #dddfcb;
+  --color-9: #548c9c;
+  --color-10: #2d212d;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, var(--color-3), var(--color-6), var(--color-4), var(--color-5));
+  background-size: 400% 400%;
+  animation: gradientBackground 15s ease infinite;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Timoteo;
+}
+
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* El resto del código CSS permanece igual */
+
   
   .home .image-container {
       display: flex;
@@ -128,7 +148,7 @@ body {
         background-size: 600% 400%;
         color: transparent;
         font-weight: 900;
-        font-family: "Courier New", Courier, monospace;
+        font-family: Timoteo;
         font-style:normal;
         font-variant: small-caps;
         text-transform: none;  
@@ -468,9 +488,14 @@ body {
   
   .affix {
       padding: 0;
-      background-image: 
-        radial-gradient(circle at 10% 20%, var(--color-7) 0%, transparent 20%),
-        radial-gradient(circle at 90% 80%, var(--color-5) 0%, transparent 20%);
+      background: linear-gradient(135deg, 
+      var(--color-3) 0%, 
+      var(--color-6) 25%, 
+      var(--color-4) 50%, 
+      var(--color-5) 75%, 
+      var(--color-9) 100%
+  );
+    animation: gradientBackground 15s ease infinite;
   }
   
   
@@ -510,11 +535,10 @@ body {
   --color-10: #2d212d;
 }
 .bodi-ab {
-  font-family: 'Poppins', sans-serif;
-  background-color: var(--color-10);
-  background-image: 
-      radial-gradient(circle at 10% 20%, var(--color-7) 0%, transparent 20%),
-      radial-gradient(circle at 90% 80%, var(--color-5) 0%, transparent 20%);
+  font-family: Timoteo;
+  background: linear-gradient(135deg, var(--color-3), var(--color-6), var(--color-4), var(--color-5));
+  background-size: 400% 400%;
+  animation: gradientBackground 15s ease infinite;
   font-size: 16px;
   padding: 40px 20px;
   min-height: 100vh;
@@ -635,13 +659,13 @@ body {
   --color-10: #2d212d;
 }
 .about-section {
-  font-family: 'Poppins', sans-serif;
+  font-family: Timoteo;
   margin: 0;
   padding: 40px 20px;
   background-color: var(--color-10);
-  background-image: 
-      radial-gradient(circle at 10% 20%, var(--color-7) 0%, transparent 20%),
-      radial-gradient(circle at 90% 80%, var(--color-5) 0%, transparent 20%);
+  background: linear-gradient(135deg, var(--color-3), var(--color-6), var(--color-4), var(--color-5));
+  background-size: 400% 400%;
+  animation: gradientBackground 15s ease infinite;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -802,10 +826,12 @@ body {
 
 /*SER SECTIION*/
 .bodi-ser {
-    font-family: 'Arial', sans-serif;
+  font-family: Timoteo;
     margin: 0;
     padding: 20px;
-    background: #2d212d; /* Color de fondo oscuro */
+    background: linear-gradient(135deg, var(--color-3), var(--color-6), var(--color-4), var(--color-5));
+  background-size: 400% 400%;
+  animation: gradientBackground 15s ease infinite;
     color: #dddfcb; /* Color de texto claro */
 }
 .container-ser {
@@ -925,12 +951,12 @@ body {
 
 /*AGENDA SECTION*/
 .bodi-agenda {
-    font-family: 'Arial', sans-serif;
+  font-family: Timoteo;
     margin: 0;
     padding: 85px 20px 20px;
-    background-image: 
-      radial-gradient(circle at 10% 20%, var(--color-7) 0%, transparent 20%),
-      radial-gradient(circle at 90% 80%, var(--color-5) 0%, transparent 20%);
+    background: linear-gradient(135deg, var(--color-3), var(--color-6), var(--color-4), var(--color-5));
+  background-size: 400% 400%;
+  animation: gradientBackground 15s ease infinite;
     color: #dddfcb; /* Color de texto claro */
   }
   .container-agenda {
@@ -965,6 +991,7 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    font-family: Timoteo;
   }
   .nav-buttons-agenda .btn-agenda:hover {
     background-color: #3cbfb6;
@@ -1025,8 +1052,11 @@ body {
 
   /*----------PORTFOLIO----------------------*/
   .bodi-port {
-    background-color: #2d212d;
+    background: linear-gradient(135deg, var(--color-3), var(--color-6), var(--color-4), var(--color-5));
+  background-size: 400% 400%;
+  animation: gradientBackground 15s ease infinite;
     color: #dddfcb;
+    
 }
 .ul-port {
     padding: 0;
@@ -1044,6 +1074,7 @@ body {
     text-transform: uppercase;
     transition: 0.3s;
     cursor: pointer;
+    font-family: Timoteo;
   }
   .ul-port .li-port:hover {
     background: #77caba;
@@ -1188,7 +1219,7 @@ body {
     opacity: 0.8;
   }
   .portfolio-title {
-    font-family: 'Montserrat', sans-serif; /* Asegúrate de importar esta fuente o usa una similar */
+    font-family: Timoteo;
     font-size: 40px;
     font-weight: 700;
     color: #e9be66;
@@ -1237,13 +1268,12 @@ body {
 }
 
 .bodi-info {
-  font-family: 'Poppins', sans-serif;
+  font-family: Timoteo;
   margin: 0;
   padding: 40px 20px;
-  background-color: var(--color-10);
-  background-image: 
-    radial-gradient(circle at 10% 20%, var(--color-7) 0%, transparent 20%),
-    radial-gradient(circle at 90% 80%, var(--color-5) 0%, transparent 20%);
+  background: linear-gradient(135deg, var(--color-3), var(--color-6), var(--color-4), var(--color-5));
+  background-size: 400% 400%;
+  animation: gradientBackground 15s ease infinite;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1446,11 +1476,13 @@ body {
 .bodi-pie {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: Timoteo;
 }
 
 .footer {
-  background-color: var(--color-10);
+  background: linear-gradient(135deg, var(--color-3), var(--color-6), var(--color-4), var(--color-5));
+  background-size: 400% 400%;
+  animation: gradientBackground 15s ease infinite;
   color: var(--color-8);
   position: relative;
   overflow: hidden;
